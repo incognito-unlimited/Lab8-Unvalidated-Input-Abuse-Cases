@@ -1,0 +1,39 @@
+phase,target,pluginId,alert,risk,confidence,cweId,url,param,evidence
+vulnerable,http://127.0.0.1:5000,10020,Missing Anti-clickjacking Header,Medium,Medium,1021,http://127.0.0.1:5000/,x-frame-options,
+vulnerable,http://127.0.0.1:5000,10020,Missing Anti-clickjacking Header,Medium,Medium,1021,http://127.0.0.1:5000/result?name=ZAP&quantity=3,x-frame-options,
+vulnerable,http://127.0.0.1:5000,10020,Missing Anti-clickjacking Header,Medium,Medium,1021,http://127.0.0.1:5000,x-frame-options,
+vulnerable,http://127.0.0.1:5000,10038,Content Security Policy (CSP) Header Not Set,Medium,High,693,http://127.0.0.1:5000/script,,
+vulnerable,http://127.0.0.1:5000,10038,Content Security Policy (CSP) Header Not Set,Medium,High,693,http://127.0.0.1:5000/robots.txt,,
+vulnerable,http://127.0.0.1:5000,10038,Content Security Policy (CSP) Header Not Set,Medium,High,693,http://127.0.0.1:5000/sitemap.xml,,
+vulnerable,http://127.0.0.1:5000,10038,Content Security Policy (CSP) Header Not Set,Medium,High,693,http://127.0.0.1:5000/result?name=ZAP&quantity=3,,
+vulnerable,http://127.0.0.1:5000,10038,Content Security Policy (CSP) Header Not Set,Medium,High,693,http://127.0.0.1:5000,,
+vulnerable,http://127.0.0.1:5000,10038,Content Security Policy (CSP) Header Not Set,Medium,High,693,http://127.0.0.1:5000/,,
+vulnerable,http://127.0.0.1:5000,10036,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,497,http://127.0.0.1:5000,,Werkzeug/3.1.9 Python/3.11.9
+vulnerable,http://127.0.0.1:5000,10036,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,497,http://127.0.0.1:5000/,,Werkzeug/3.1.9 Python/3.11.9
+vulnerable,http://127.0.0.1:5000,10036,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,497,http://127.0.0.1:5000/sitemap.xml,,Werkzeug/3.1.9 Python/3.11.9
+vulnerable,http://127.0.0.1:5000,10036,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,497,http://127.0.0.1:5000/script,,Werkzeug/3.1.9 Python/3.11.9
+vulnerable,http://127.0.0.1:5000,10036,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,497,http://127.0.0.1:5000/robots.txt,,Werkzeug/3.1.9 Python/3.11.9
+vulnerable,http://127.0.0.1:5000,10036,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,497,http://127.0.0.1:5000/result?name=ZAP&quantity=3,,Werkzeug/3.1.9 Python/3.11.9
+vulnerable,http://127.0.0.1:5000,10021,X-Content-Type-Options Header Missing,Low,Medium,693,http://127.0.0.1:5000/result?name=ZAP&quantity=3,x-content-type-options,
+vulnerable,http://127.0.0.1:5000,10021,X-Content-Type-Options Header Missing,Low,Medium,693,http://127.0.0.1:5000,x-content-type-options,
+vulnerable,http://127.0.0.1:5000,10021,X-Content-Type-Options Header Missing,Low,Medium,693,http://127.0.0.1:5000/,x-content-type-options,
+vulnerable,http://127.0.0.1:5000,40012,Cross Site Scripting (Reflected),High,Medium,79,http://127.0.0.1:5000/result?name=%3C%2Fdiv%3E%3CscrIpt%3Ealert%281%29%3B%3C%2FscRipt%3E%3Cdiv%3E&quantity=3,name,</div><scrIpt>alert(1);</scRipt><div>
+vulnerable,http://127.0.0.1:5000,40026,Cross Site Scripting (DOM Based),High,High,79,"http://127.0.0.1:5000/#jaVasCript:/*-/*`/*\`/*'/*""/**/(/* */oNcliCk=alert(5397) )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\x3csVg/<sVg/oNloAd=alert(5397)//>\x3e",,
+vulnerable,http://127.0.0.1:5000,40026,Cross Site Scripting (DOM Based),High,High,79,"http://127.0.0.1:5000#jaVasCript:/*-/*`/*\`/*'/*""/**/(/* */oNcliCk=alert(5397) )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\x3csVg/<sVg/oNloAd=alert(5397)//>\x3e",,
+vulnerable,http://127.0.0.1:5000,40026,Cross Site Scripting (DOM Based),High,High,79,http://127.0.0.1:5000/result?name=%3Cscript%3Ealert(5397)%3C/script%3E&quantity=3,name,
+secure,http://127.0.0.1:5001,10038,Content Security Policy (CSP) Header Not Set,Medium,High,693,http://127.0.0.1:5001/sitemap.xml,,
+secure,http://127.0.0.1:5001,10020,Missing Anti-clickjacking Header,Medium,Medium,1021,http://127.0.0.1:5001/,x-frame-options,
+secure,http://127.0.0.1:5001,10020,Missing Anti-clickjacking Header,Medium,Medium,1021,http://127.0.0.1:5001,x-frame-options,
+secure,http://127.0.0.1:5001,10038,Content Security Policy (CSP) Header Not Set,Medium,High,693,http://127.0.0.1:5001/robots.txt,,
+secure,http://127.0.0.1:5001,10020,Missing Anti-clickjacking Header,Medium,Medium,1021,http://127.0.0.1:5001/result?name=ZAP&quantity=3,x-frame-options,
+secure,http://127.0.0.1:5001,10036,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,497,http://127.0.0.1:5001/sitemap.xml,,Werkzeug/3.1.9 Python/3.11.9
+secure,http://127.0.0.1:5001,10036,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,497,http://127.0.0.1:5001/robots.txt,,Werkzeug/3.1.9 Python/3.11.9
+secure,http://127.0.0.1:5001,10038,Content Security Policy (CSP) Header Not Set,Medium,High,693,http://127.0.0.1:5001,,
+secure,http://127.0.0.1:5001,10038,Content Security Policy (CSP) Header Not Set,Medium,High,693,http://127.0.0.1:5001/,,
+secure,http://127.0.0.1:5001,10038,Content Security Policy (CSP) Header Not Set,Medium,High,693,http://127.0.0.1:5001/result?name=ZAP&quantity=3,,
+secure,http://127.0.0.1:5001,10036,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,497,http://127.0.0.1:5001,,Werkzeug/3.1.9 Python/3.11.9
+secure,http://127.0.0.1:5001,10036,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,497,http://127.0.0.1:5001/result?name=ZAP&quantity=3,,Werkzeug/3.1.9 Python/3.11.9
+secure,http://127.0.0.1:5001,10036,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,High,497,http://127.0.0.1:5001/,,Werkzeug/3.1.9 Python/3.11.9
+secure,http://127.0.0.1:5001,10021,X-Content-Type-Options Header Missing,Low,Medium,693,http://127.0.0.1:5001,x-content-type-options,
+secure,http://127.0.0.1:5001,10021,X-Content-Type-Options Header Missing,Low,Medium,693,http://127.0.0.1:5001/result?name=ZAP&quantity=3,x-content-type-options,
+secure,http://127.0.0.1:5001,10021,X-Content-Type-Options Header Missing,Low,Medium,693,http://127.0.0.1:5001/,x-content-type-options,
